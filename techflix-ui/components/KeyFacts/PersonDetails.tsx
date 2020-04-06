@@ -19,7 +19,7 @@ export const PersonDetails: FunctionComponent<PersonDetailsProps> = ({person}) =
             <div className={styles.detailsContainer}>
                 <h2 className={styles.title}>Personal Details</h2>
                 <Fact name="Date of Birth" value={person.dateOfBirth}/>
-                <Fact name="Date of Death" value={person.deathDay}/>
+                <Fact name="Date of Death" value={person.deathDay!=null?person.deathDay:"Immortal"}/>
                 <Fact name="Age" value={age}/>
                 <Fact name="Place of Birth" value={person.placeOfBirth}/>
                 <Fact name="Main career" value={person.knownFor}/>
