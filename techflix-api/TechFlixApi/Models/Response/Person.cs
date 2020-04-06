@@ -27,7 +27,7 @@ namespace TechFlixApi.Models.Response
                 Id = cataloguePerson.Id,
                 Name = personMetadata.Name,
                 DateOfBirth = personMetadata.Birthday,
-                DeathDay = personMetadata.DeathDay,
+                DeathDay = "Immortal",
                 PlaceOfBirth = personMetadata.PlaceOfBirth,
                 KnownFor = personMetadata.KnownForDepartment,
                 Biography = personMetadata.Biography,
