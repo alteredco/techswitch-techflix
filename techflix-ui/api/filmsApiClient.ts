@@ -54,6 +54,7 @@ export function toFilm(item: any): FilmModel {
         url: `/films/${item.id}`,
         imageUrl: item.posterImageUrl,
         name: item.title,
+        synopsis: item.synopsis,
     }
 }
 
