@@ -26,7 +26,7 @@ interface FilmProps {
 
 const Film : NextPage<FilmProps> = ({film, cast, similarFilms}) => {
     const main = <div>
-        <Synopsis synopsis={film.synopsis}/>
+        <Synopsis overview={film.overview}/>
         <CastList cast={cast}/>
         <SimilarFilms films={similarFilms}/>
     </div>;

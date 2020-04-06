@@ -11,7 +11,7 @@ export interface FilmModel {
     posterImageUrl: string;
     budget: number;
     homePage: string;
-    synopsis: string;
+    overview: string;
     releaseDate: string;
     revenue: number;
     runtime: number;
@@ -54,7 +54,6 @@ export function toFilm(item: any): FilmModel {
         url: `/films/${item.id}`,
         imageUrl: item.posterImageUrl,
         name: item.title,
-        synopsis: item.synopsis,
     }
 }
 
